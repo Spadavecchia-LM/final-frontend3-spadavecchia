@@ -15,6 +15,7 @@ li {
 button {
   border: none;
   background-color: transparent;
+  cursor:pointer;
   && svg {
     height: 2rem;
     width: 2rem;
@@ -26,13 +27,75 @@ body{
 table {
     border-collapse: collapse;
     width: 100%;
+    color:#001848;
   }
 
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #001848;
     padding: 8px;
     text-align: left;
   }
+
+
+
+#dark table{
+    color:#fafafa;
+    && th, td{
+      border:1px solid #fafafa;
+    }
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  width:50%;
+  margin:0 auto;
+  color:#001848;
+  align-items:center;
+  gap:20px;
+  border: 1px solid #001848;
+  padding:20px;
+  background-color: #f3f3f3;
+  && label{
+    font-size:1.5rem;
+  }
+
+  && #mensaje{
+    background-color:transparent;
+    &&:focus{
+      outline:none;
+    }
+    padding:10px;
+  }
+  
+  && #nombre, #email{
+    background-color:transparent;
+    padding:10px;
+    border:none;
+    border-bottom:1px solid #001848;
+    margin:10px 0px;
+    &&:focus{
+      outline:none;
+    }
+  }
+
+  && button{
+    border:none;
+    background-color: #001848;
+    color:#fafafa;
+    padding:12px 24px;
+    border-radius:6px;
+    &&:hover{
+      background-color: #fafafa;
+      color:#001848;
+      border:1px solid #001848;
+      transition:0.5s;
+  
+    }
+  }
+
+ 
+}
 
 
 body #light {

@@ -48,7 +48,7 @@ const Form = () => {
       <div>
         <label htmlFor="email">Correo Electronico</label>
       </div>
-      <input name="email" type="email" placeholder="example@gmail.com" value={contactUser.email} onChange={handleUserChange}/>
+      <input name="email" id="email" type="email" placeholder="example@gmail.com" value={contactUser.email} onChange={handleUserChange}/>
 
       <div>
         <label htmlFor="mensaje">Dejanos tu mensaje</label>
