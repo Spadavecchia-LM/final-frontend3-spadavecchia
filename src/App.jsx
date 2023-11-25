@@ -13,9 +13,6 @@ function App() {
 
   const {state} = useContext(GlobalContext)
 
-
-
-
   return (
     <div id={!state.darkMode ? "light" : "dark"}>
       <NavBar />

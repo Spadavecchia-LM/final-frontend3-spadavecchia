@@ -11,6 +11,10 @@ const NavBar = () => {
   const toggle = () => {
     dispatch({ type: "TOGGLE_MODE", payload: !state.darkMode })
   }
+  useEffect(() => {
+    const theme = state.darkMode ? "dark" : "light"
+    localStorage.setItem("theme", theme)
+  }, [state.darkMode])
 
   console.log(state)
 
