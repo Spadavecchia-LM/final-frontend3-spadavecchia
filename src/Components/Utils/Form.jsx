@@ -12,7 +12,7 @@ const Form = () => {
     if(validarEmail(contactUser.email) && validarNombre(contactUser.nombre)){
       setValido({showError:false, esValido:true})
       alert(`gracias por contactarnos ${contactUser.nombre} en breve te responderemos via email`)
-      window.location.reload()
+      window.location.replace("/")
     }else{
       setValido({showError:true, esValido:false})
     }

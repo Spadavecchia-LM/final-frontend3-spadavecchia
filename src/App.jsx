@@ -6,12 +6,14 @@ import Favs from "./Components/Pages/Favs";
 import NavBar from "./Components/Utils/NavBar";
 import Footer from "./Components/Utils/Footer";
 import { GlobalContext } from "./Context/Context";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 
 function App() {
 
   const {state} = useContext(GlobalContext)
+
+
 
 
   return (
