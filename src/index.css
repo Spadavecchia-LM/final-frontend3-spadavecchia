@@ -62,6 +62,7 @@ table {
 
   && #mensaje{
     background-color:transparent;
+    width:80%;
     &&:focus{
       outline:none;
     }
@@ -72,8 +73,8 @@ table {
     background-color:transparent;
     padding:10px;
     border:none;
+    width:50%;
     border-bottom:1px solid #001848;
-    margin:10px 0px;
     &&:focus{
       outline:none;
     }
@@ -93,8 +94,23 @@ table {
   
     }
   }
-
- 
+}
+#dark .form{
+  background-color:#001840;
+  color:#fafafa;
+  border:1px solid #fafafa;
+  transition:0.5s;
+   && input{
+    border-color:#fafafa;
+    color:#fafafa;
+   }
+   && button{
+    border:1px solid #fafafa;
+   }
+   && #mensaje{
+    background-color:#001848;
+    color:#fafafa;
+   }
 }
 
 
@@ -146,7 +162,7 @@ body #dark {
   }
 }
 #dark .card {
-  background-color: rgb(11, 53, 138);
+  background-color: #001860;
   color: #fafafa;
   border-color: #fafafa;
   transition: 0.5s ease-in-out;
