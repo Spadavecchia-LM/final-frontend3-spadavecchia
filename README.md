@@ -8,3 +8,8 @@ INSTALAR LOS SIGUIENTES PAQUETES:
 4. npm install sweetalert2
 5. npm install axios
 6. npm install react-icons --save
+
+
+    ### gif de ejemplo:
+
+    ![1701021528981](image/README/1701021528981.png)
