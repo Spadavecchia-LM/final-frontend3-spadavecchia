@@ -1,38 +1,42 @@
-import React, { useContext, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { GlobalContext } from '../../Context/Context'
+import React, { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { GlobalContext } from "../../Context/Context";
 import { WiDaySunny } from "react-icons/wi";
 import { WiMoonWaningCrescent3 } from "react-icons/wi";
 
 const NavBar = () => {
-
-  const { state, dispatch } = useContext(GlobalContext)
+  const { state, dispatch } = useContext(GlobalContext);
 
   const toggle = () => {
-    dispatch({ type: "TOGGLE_MODE", payload: !state.darkMode })
-  }
+    dispatch({ type: "TOGGLE_MODE", payload: !state.darkMode });
+  };
   useEffect(() => {
-    const theme = state.darkMode ? "dark" : "light"
-    localStorage.setItem("theme", theme)
-  }, [state.darkMode])
+    const theme = state.darkMode ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+  }, [state.darkMode]);
 
-  console.log(state)
-
+  console.log(state);
 
   return (
     <div className="navBar">
       <ul>
-        <Link to={`/`}><li>Home</li></Link>
-        <Link to={`/contact`}><li>Contacto</li></Link>
-        <Link to={`/favs`}><li>Favoritos</li></Link>
+        <Link to={`/`}>
+          <li>Home</li>
+        </Link>
+        <Link to={`/contact`}>
+          <li>Contacto</li>
+        </Link>
+        <Link to={`/favs`}>
+          <li>Favoritos({state.favs.length})</li>
+        </Link>
       </ul>
       <div>
-
-        <button onClick={toggle}>{!state.darkMode ? <WiDaySunny /> : <WiMoonWaningCrescent3 />}</button>
+        <button onClick={toggle}>
+          {!state.darkMode ? <WiDaySunny /> : <WiMoonWaningCrescent3 />}
+        </button>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default React.memo(NavBar)
+export default React.memo(NavBar);

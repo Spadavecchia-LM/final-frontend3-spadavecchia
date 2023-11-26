@@ -1,12 +1,13 @@
-import React from 'react'
-import Form from '../Utils/Form'
+import React from "react";
+import Form from "../Utils/Form";
 
 const Contact = () => {
   return (
-    <>
-    <Form/>
-    </>
-  )
-}
+    <div className="contact">
+      <h1>CONTACTANOS</h1>
+      <Form />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;
