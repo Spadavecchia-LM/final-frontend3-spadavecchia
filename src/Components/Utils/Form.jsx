@@ -46,7 +46,7 @@ const Form = () => {
       showConfirmButton: true,
     }).then((result) => {
       if (result.isConfirmed && estado == "success") {
-        window.location.replace("/");
+        setContactUser({ nombre: "", email: "", mensaje: "" });
       }
     });
   };
