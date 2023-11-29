@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { GlobalContext } from "../../Context/Context";
-import fotoPerfil from "../../Assets/fotoPerfil.avif";
 import { Link } from "react-router-dom";
 import Toastify from "toastify-js";
 
@@ -40,7 +39,7 @@ const Detail = () => {
 
   return (
     <div className="detail">
-      <img src={fotoPerfil} alt="foto de dentista" />
+      <img src="https://media.istockphoto.com/id/1436148451/es/foto/doctora-sonriente-con-tableta-digital-de-pie-sobre-fondo-gris-aislado.jpg?s=1024x1024&w=is&k=20&c=uTl86-Boiidyq0C_3hAzXrnBM1_lH5TsklT0Tp4ONMs=" alt="foto de dentista" />
       <div>
         <h1>Datos de contacto</h1>
         <ul>
