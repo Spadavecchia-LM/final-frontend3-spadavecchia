@@ -360,11 +360,12 @@ td button svg {
 
 .cardsContainer {
   display: flex;
-  width: 100vw;
+  width: 90%;
   height: 100%;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
   gap: 20px;
   && .hero {
     display: grid;
