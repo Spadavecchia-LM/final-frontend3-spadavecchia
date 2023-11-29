@@ -394,6 +394,11 @@ td button svg {
   margin-top: 100px;
   place-items: center;
   background-color: #d4d4d4;
+  && p{
+    text-align: center;
+    padding: 10px;
+  }
+  
 }
 #dark .footer{
   background-color: #001860;
@@ -410,5 +415,8 @@ td button svg {
   }
   .hero h1{
     font-size: 1.5rem;
+  }
+  .footer p{
+    font-size: 0.7rem;
   }
 }
