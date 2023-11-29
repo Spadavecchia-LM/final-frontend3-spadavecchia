@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../../Context/Context";
 import { FaRegTrashAlt } from "react-icons/fa";
+import Toastify from "toastify-js";
 
 const Favs = () => {
   const favoritos = JSON.parse(localStorage.getItem("user"));
@@ -12,6 +13,16 @@ const Favs = () => {
     const nuevosFavoritos = favoritos.filter((fav) => fav.id !== id);
     localStorage.setItem("user", JSON.stringify(nuevosFavoritos));
     dispatch({ type: "ELIMINAR_FAV", payload: id });
+    Toastify({
+      text: "borrado con éxito",
+      style: {
+        background: "red",
+        width: "300px",
+      },
+      gravity: "bottom",
+      position: "center",
+      duration: 1000,
+    }).showToast();
   };
   console.log(state.favs);
 
