@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="cardsContainer">
-      <div className="hero">CLINICA SPADAVECCHIA</div>
+      <div className="hero"><h1>CLINICA SPADAVECCHIA</h1></div>
       {state.userList.map((user) => {
         return (
           <div key={user.id}>
