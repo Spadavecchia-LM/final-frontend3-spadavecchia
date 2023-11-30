@@ -1,6 +1,6 @@
 # EXAMEN FINAL FRONTEND 3 - SPADAVECCHIA LEONARDO
 
-WEBSITE URL:  [https://final-frontend3-spadavecchia.vercel.app/](LINK)
+[WEBSITE URL:](https://final-frontend3-spadavecchia.vercel.app/)  
 
 INSTALAR LOS SIGUIENTES PAQUETES:
 
